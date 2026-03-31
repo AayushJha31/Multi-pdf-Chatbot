@@ -74,12 +74,12 @@ rag_chain = (
 # ----------------------------
 # 7. CHAT LOOP
 # ----------------------------
-print("📄 Multi-PDF Chatbot (Ollama + LangChain 1.2.0)\n")
+print("Multi-PDF Chatbot (Ollama + LangChain 1.2.0)\n")
 
 while True:
-    query = input("🧑 Ask: ")
+    query = input("Ask: ")
     if query.lower() in ["exit", "quit"]:
         break
 
     answer = rag_chain.invoke(query)
-    print("\n🤖 Answer:\n", answer, "\n")
+    print("\nAnswer:\n", answer, "\n")
